@@ -9,11 +9,13 @@ $white-color: #ffffff;
 
 html {
   scroll-behavior: smooth;
+  transform: scale(0.85);  // This reduces the size of all elements to 85%
+  transform-origin: top left;  // Keeps the scaling consistent from the top left of the viewport
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
   padding: 0;
