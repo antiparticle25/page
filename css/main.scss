@@ -9,7 +9,7 @@ $white-color: #ffffff;
 
 html {
   scroll-behavior: smooth;
-  transform: scale(0.85);  // This reduces the size of all elements to 85%
+  transform: scale(0.5);  // This reduces the size of all elements to 85%
   transform-origin: top left;  // Keeps the scaling consistent from the top left of the viewport
 }
 
