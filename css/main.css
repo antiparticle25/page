@@ -107,19 +107,6 @@ body {
   padding-right: 50px;
 }
 
-.profile-pic-container {
-  align-self: flex-end;
-  margin-bottom: 10px;
-  margin-left: 600px;
-}
-
-.profile-pic {
-  width: 230px;
-  border-radius: 60%;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
 .social-icons a {
   font-size: 2em;
   margin-right: 25px;
