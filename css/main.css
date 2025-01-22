@@ -631,8 +631,8 @@ section ul {
   display: none;
 }
   #contact .content p {
-    padding: 150px 50px 50px 50px;
-    font-size: 0.8em;
+    padding: 100px 50px 50px 50px;
+    font-size: 0.9em;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify !important;
@@ -643,7 +643,7 @@ section ul {
     margin-bottom: 0;
   }
   #contact .social-icons a {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 0 10px;
   }
   .projects-grid {
