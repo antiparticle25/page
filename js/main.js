@@ -1,93 +1,89 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const scrollThumb = document.getElementById('scroll-thumb');
-    const scrollBar = document.getElementById('custom-scroll-bar');
-    const navbarFixed = document.querySelector('.navbar-fixed');
-    const homeSection = document.getElementById('home');
+  const scrollThumb = document.getElementById('scroll-thumb');
+  const scrollBar = document.getElementById('custom-scroll-bar');
+  const navbarFixed = document.querySelector('.navbar-fixed');
+  const homeSection = document.getElementById('home');
 
-    // Update the scroll thumb position
-    function updateScrollThumb() {
-        const scrollTop = window.scrollY || window.pageYOffset;
-        const documentHeight = document.documentElement.scrollHeight;
-        const viewportHeight = window.innerHeight;
-        const scrollableHeight = documentHeight - viewportHeight;
-        const scrollBarHeight = scrollBar.offsetHeight;
+  function updateScrollThumb() {
+    const scrollTop = window.scrollY || window.pageYOffset;
+    const documentHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+    const scrollableHeight = documentHeight - viewportHeight;
+    const scrollBarHeight = scrollBar.offsetHeight;
 
-        const thumbHeight = (viewportHeight / documentHeight) * scrollBarHeight;
-        scrollThumb.style.height = thumbHeight + 'px';
+    const thumbHeight = (viewportHeight / documentHeight) * scrollBarHeight;
+    scrollThumb.style.height = thumbHeight + 'px';
 
-        const maxThumbTop = scrollBarHeight - thumbHeight;
-        const thumbTop = (scrollTop / scrollableHeight) * maxThumbTop;
-        scrollThumb.style.top = thumbTop + 'px';
+    const maxThumbTop = scrollBarHeight - thumbHeight;
+    const thumbTop = (scrollTop / scrollableHeight) * maxThumbTop;
+    scrollThumb.style.top = thumbTop + 'px';
+  }
+
+  function toggleNavbarVisibility() {
+    const scrollY = window.scrollY;
+    const threshold = homeSection.offsetHeight - 50;
+
+    if (scrollY >= threshold) {
+      navbarFixed.style.display = 'flex';
+    } else {
+      navbarFixed.style.display = 'none';
     }
+  }
 
-    // Toggle the visibility of the fixed navbar
-    function toggleNavbarVisibility() {
-        const scrollY = window.scrollY;
-        const threshold = homeSection.offsetHeight - 50;
-
-        if (scrollY >= threshold) {
-            navbarFixed.style.display = 'flex';
-        } else {
-            navbarFixed.style.display = 'none';
-        }
-    }
-
-    // Event listeners for scrolling and resizing
-    window.addEventListener('scroll', function() {
-        updateScrollThumb();
-        toggleNavbarVisibility();
-    });
-
-    window.addEventListener('resize', function() {
-        updateScrollThumb();
-        toggleNavbarVisibility();
-    });
-
+  window.addEventListener('scroll', function() {
     updateScrollThumb();
     toggleNavbarVisibility();
+  });
 
-    // Scroll bar dragging functionality
-    let isDragging = false;
-    let startY;
-    let startThumbTop;
+  window.addEventListener('resize', function() {
+    updateScrollThumb();
+    toggleNavbarVisibility();
+  });
 
-    scrollThumb.addEventListener('mousedown', function(e) {
-        isDragging = true;
-        startY = e.clientY;
-        startThumbTop = parseFloat(scrollThumb.style.top) || 0;
-        document.body.style.userSelect = 'none';
-    });
+  updateScrollThumb();
+  toggleNavbarVisibility();
 
-    document.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            const deltaY = e.clientY - startY;
-            const scrollBarHeight = scrollBar.offsetHeight;
-            const thumbHeight = scrollThumb.offsetHeight;
-            const maxThumbTop = scrollBarHeight - thumbHeight;
+  let isDragging = false;
+  let startY;
+  let startThumbTop;
 
-            let newThumbTop = startThumbTop + deltaY;
-            newThumbTop = Math.max(0, Math.min(newThumbTop, maxThumbTop));
+  scrollThumb.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    startY = e.clientY;
+    startThumbTop = parseFloat(scrollThumb.style.top) || 0;
+    document.body.style.userSelect = 'none';
+  });
 
-            scrollThumb.style.top = newThumbTop + 'px';
+  document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+      const deltaY = e.clientY - startY;
+      const scrollBarHeight = scrollBar.offsetHeight;
+      const thumbHeight = scrollThumb.offsetHeight;
+      const maxThumbTop = scrollBarHeight - thumbHeight;
 
-            const scrollProportion = newThumbTop / maxThumbTop;
-            const newScrollTop = scrollProportion * (document.documentElement.scrollHeight - window.innerHeight);
+      let newThumbTop = startThumbTop + deltaY;
+      newThumbTop = Math.max(0, Math.min(newThumbTop, maxThumbTop));
 
-            window.scrollTo(0, newScrollTop);
-        }
-    });
+      scrollThumb.style.top = newThumbTop + 'px';
 
-    document.addEventListener('mouseup', function() {
-        if (isDragging) {
-            isDragging = false;
-            document.body.style.userSelect = '';
-        }
-    });
+      const scrollProportion = newThumbTop / maxThumbTop;
+      const newScrollTop = scrollProportion * (document.documentElement.scrollHeight - window.innerHeight);
 
-    document.addEventListener('mouseleave', function() {
-        if (isDragging) {
-            isDragging = false;
-            document.body.style.userSelect = '';
-        }
-    });
+      window.scrollTo(0, newScrollTop);
+    }
+  });
+
+  document.addEventListener('mouseup', function() {
+    if (isDragging) {
+      isDragging = false;
+      document.body.style.userSelect = '';
+    }
+  });
+
+  document.addEventListener('mouseleave', function() {
+    if (isDragging) {
+      isDragging = false;
+      document.body.style.userSelect = '';
+    }
+  });
 });
