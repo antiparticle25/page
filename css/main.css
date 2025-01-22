@@ -495,12 +495,12 @@ section ul {
     font-size: 0.8em;
   }
   .navbar-home {
-    margin-top: -30px !important; /* Adjust the negative value as needed */
+    margin-top: -40px !important; /* Adjust the negative value as needed */
   }
   
   /* Optionally reduce vertical spacing between the nav items */
   .navbar-home li {
-    margin: 10px 0 !important; /* Adjust if you want tighter/looser spacing */
+    margin: 15px 0 !important; /* Adjust if you want tighter/looser spacing */
   }
   #home {
     flex-direction: column;
@@ -617,10 +617,10 @@ section ul {
   }
   .about-me-box .content .text p {
     text-align: justify !important;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-left: 0;
     text-indent: 0;
-    margin-bottom: 0 !important;
+    margin-bottom: 5px !important;
   }
   .about-me-box .content p {
     margin-left: 0;
