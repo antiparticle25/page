@@ -495,12 +495,12 @@ section ul {
     font-size: 0.8em;
   }
   .navbar-home {
-    margin-top: -10px !important; /* Adjust the negative value as needed */
+    margin-top: -5px !important; /* Adjust the negative value as needed */
   }
   
   /* Optionally reduce vertical spacing between the nav items */
   .navbar-home li {
-    margin: 5px 0 !important; /* Adjust if you want tighter/looser spacing */
+    margin: 3px 0 !important; /* Adjust if you want tighter/looser spacing */
   }
   #home {
     flex-direction: column;
@@ -617,7 +617,7 @@ section ul {
   }
   .about-me-box .content .text p {
     text-align: justify !important;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-left: 0;
     text-indent: 0;
   }
