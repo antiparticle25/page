@@ -595,7 +595,7 @@ section ul {
     background-color: #007ab3;
   }
   .about-me-box {
-    padding: 0 5px 20px 5px;
+    padding-top: 40px;
     width: 100%;
     margin: 0 auto;
     display: flex;
