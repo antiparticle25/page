@@ -595,7 +595,7 @@ section ul {
     background-color: #007ab3;
   }
   .about-me-box {
-    padding-top: 40px;
+    padding: -10px 5px 20px 5px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -630,7 +630,7 @@ section ul {
     display: none;
   }
   #contact .content p {
-    padding: 80px 50px 50px 50px;
+    padding: 150px 50px 50px 50px;
     font-size: 0.8em;
     padding-left: 10px;
     padding-right: 10px;
