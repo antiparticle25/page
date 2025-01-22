@@ -617,7 +617,7 @@ section ul {
   }
   .about-me-box .content .text p {
     text-align: justify !important;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-left: 0;
     text-indent: 0;
     margin-bottom: 20px important!;
@@ -631,7 +631,7 @@ section ul {
   }
   #contact .content p {
     margin-top: 130px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
