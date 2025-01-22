@@ -612,7 +612,7 @@ section ul {
     align-items: center;
   }
   .about-me-box .content .text {
-    text-align: center;
+    text-align: justify;
     margin-top: -50px;
   }
   .about-me-box .content .text p {
@@ -620,7 +620,7 @@ section ul {
     font-size: 0.8em;
     margin-left: 0;
     text-indent: 0;
-    margin-bottom: 10px important!;
+    margin-bottom: 20px important!;
   }
   .about-me-box .content p {
     margin-left: 0;
