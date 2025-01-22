@@ -594,7 +594,7 @@ section ul {
     height: 2px;
     background-color: #007ab3;
   }
-  .about-me-box {
+ .about-me-box {
     padding: -10px 5px 20px 5px;
     width: 100%;
     margin: 0 auto;
@@ -613,7 +613,6 @@ section ul {
   }
   .about-me-box .content .text {
     text-align: justify;
-    margin-top: -0px;
   }
   .about-me-box .content .text p {
     text-align: justify !important;
