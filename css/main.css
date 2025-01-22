@@ -495,12 +495,12 @@ section ul {
     font-size: 0.8em;
   }
   .navbar-home {
-    margin-top: -5px !important; /* Adjust the negative value as needed */
+    margin-top: 0px !important; /* Adjust the negative value as needed */
   }
   
   /* Optionally reduce vertical spacing between the nav items */
   .navbar-home li {
-    margin: 5px 0 !important; /* Adjust if you want tighter/looser spacing */
+    margin: 10px 0 !important; /* Adjust if you want tighter/looser spacing */
   }
   #home {
     flex-direction: column;
