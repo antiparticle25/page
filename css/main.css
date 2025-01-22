@@ -505,8 +505,8 @@ section ul {
     align-items: center;
     padding: 20px;
     border-radius: 0;
-    min-height: 30vh;
-    padding-top: 10px;
+    min-height: 40vh;
+    padding-top: 50px;
   }
   .blue-section h1 {
     font-size: 1.8em;
