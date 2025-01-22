@@ -17,7 +17,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Navigation Bar (for other sections) */
 .navbar-fixed {
   position: fixed;
   top: 0;
@@ -55,7 +54,6 @@ body {
   color: #003366;
 }
 
-/* Home Section */
 #home {
   display: flex;
   flex-direction: row;
@@ -97,14 +95,27 @@ body {
   margin-bottom: 30px;
 }
 
+.profile-pic-container {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  margin-left: 600px;
+}
+
+.profile-pic {
+  width: 230px;
+  border-radius: 60%;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
 .social-icons {
-  margin-top: 10px;
+  margin-top: 8px;
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
   position: relative;
   margin-bottom: 20px;
-  padding-right: 50px;
+  padding-right: 80px;
 }
 
 .social-icons a {
@@ -112,6 +123,10 @@ body {
   margin-right: 25px;
   transition: color 0.3s;
   color: #ffffff;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
 .social-icons a:hover {
@@ -130,7 +145,7 @@ body {
 
 .right-section::before {
   content: "";
-  background: url('/images/home.png') no-repeat center center;
+  background: url('../images/home.png') no-repeat center center;
   background-size: 80%;
   position: absolute;
   top: 55%;
@@ -153,18 +168,6 @@ body {
 .navbar-home ul {
   list-style: none;
   padding-left: 150px;
-}
-
-@media (max-width: 767px) {
-  .navbar-home ul {
-    padding-top: 300px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-home ul {
-    padding-top: 240px !important;
-  }
 }
 
 .navbar-home li {
@@ -193,7 +196,6 @@ body {
   background-color: #007ab3;
 }
 
-/* Adjusted Section styles */
 section {
   min-height: 100vh;
   display: flex;
@@ -226,7 +228,6 @@ section ul {
   padding: 0;
 }
 
-/* Projects Section */
 #projects {
   min-height: 100vh;
   display: flex;
@@ -239,7 +240,7 @@ section ul {
 
 #projects::before {
   content: "";
-  background: url('/images/circle.png') no-repeat center center;
+  background: url('../images/circle.png') no-repeat center center;
   background-size: 50%;
   opacity: 0.2;
   position: absolute;
@@ -271,24 +272,24 @@ section ul {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Ensures three columns */
-  gap: 30px 5px; /* Adjusts row gap to 20px and column gap to 5px */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 5px;
   padding: 20px;
   width: 100%;
-  max-width: 800px; /* Adjust the maximum width if necessary */
+  max-width: 800px;
   margin: 0 auto;
   align-items: start;
-  justify-content: center; /* Ensures the cards are evenly spaced across the container */
+  justify-content: center;
 }
 
 .project-card {
   background-color: #f9f9f9;
-  padding: 15px;  /* Reduced padding to keep card size small */
+  padding: 15px;
   border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center;
-  width: 200px;  /* Set fixed width */
-  height: 300px; /* Set fixed height */
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -339,7 +340,10 @@ section ul {
   color: #005f8a;
 }
 
-/* Custom Scroll Bar */
+.projects-list {
+  display: none;
+}
+
 .scroll-bar {
   position: fixed;
   right: 8%;
@@ -360,7 +364,6 @@ section ul {
   top: 0;
 }
 
-/* About Me Box */
 .about-me-box {
   padding: 30px;
   width: 100%;
@@ -381,7 +384,7 @@ section ul {
   right: -20px;
   bottom: 0;
   left: 0;
-  background: url('/images/test.png') center right no-repeat;
+  background: url('../images/test.png') center right no-repeat;
   background-size: contain;
   opacity: 0.05;
   pointer-events: none;
@@ -406,7 +409,6 @@ section ul {
 
 .about-me-box .content .text {
   order: 1;
-  text-align: left;
   width: 100%;
 }
 
@@ -429,20 +431,73 @@ section ul {
   margin-left: 0;
 }
 
+#contact .social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .social-icons a {
+  font-size: 3em;
+  margin: 0 20px;
+  transition: color 0.3s;
+  color: #007ab3;
+}
+
+#contact .social-icons a:hover {
+  color: #005f8a;
+}
+
+@media (min-width: 768px) {
+  /* Adjust the "About me", "Projects", "Contact" links on the home screen */
+  .navbar-home ul {
+    margin-top: 240px;  /* Move the list down */
+    margin-left: 0px;   /* Shift the list if needed */
+  }
+  .navbar-home li {
+    margin: 40px 0;     /* Increase vertical spacing */
+  }
+
+  /* Shift the image inside the container on larger screens */
+  .profile-pic {
+    position: relative;
+    right: 50px;
+    top: 10px;
+  }
+
+  /* Adjust vertical spacing and text alignment for contact section */
+  #contact .about-me-box {
+    margin-top: 120px;
+    text-align: center;
+  }
+  #contact .about-me-box .content p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #contact .social-icons {
+    margin-top: 50px;
+    margin-left: 90px;
+    justify-content: center;
+  }
+  #contact .social-icons a {
+    font-size: 4em;
+    margin: 0 30px;
+  }
+}
+
 @media (max-width: 767px) {
   .navbar-home a {
     font-size: 1em;
   }
-
   .navbar-fixed a {
     font-size: 0.8em;
   }
-
   #home {
     flex-direction: column;
     align-items: center;
   }
-
   .blue-section {
     flex: none;
     width: 100%;
@@ -453,34 +508,30 @@ section ul {
     min-height: 75vh;
     padding-top: 130px;
   }
-
   .blue-section h1 {
     font-size: 1.8em;
     text-align: center;
     margin-bottom: 15px;
     align-self: center;
   }
-
   .blue-section p {
     font-size: 1.1em;
     text-align: center;
     margin-bottom: 20px;
     align-self: center;
   }
-
   .profile-pic-container {
     align-self: center !important;
     margin-left: 0 !important;
     margin-bottom: 15px;
   }
-
   .profile-pic {
     width: 200px;
     border-radius: 60%;
     margin-bottom: 15px;
     opacity: 0.9;
+    position: static;
   }
-
   .social-icons {
     margin-top: 10px;
     display: flex;
@@ -490,18 +541,15 @@ section ul {
     padding-right: 0;
     align-self: center;
   }
-
   .social-icons a {
     font-size: 1.8em;
     margin: 0 10px;
   }
-
   .right-section {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-
   .navbar-home {
     display: flex;
     flex-direction: column;
@@ -509,18 +557,15 @@ section ul {
     margin-top: 10px;
     width: 100%;
   }
-
   .navbar-home ul {
     list-style: none;
     padding: 0;
     padding-right: 15;
     margin: 0;
   }
-
   .navbar-home li {
     margin: 20px 0;
   }
-
   .navbar-home a {
     font-size: 1em;
     color: #007ab3;
@@ -528,12 +573,10 @@ section ul {
     transition: color 0.3s;
     text-align: center;
   }
-
   .navbar-home a:hover {
     color: #003366;
     position: relative;
   }
-
   .navbar-home a:hover::after {
     content: '';
     position: absolute;
@@ -543,7 +586,6 @@ section ul {
     height: 2px;
     background-color: #007ab3;
   }
-
   .about-me-box {
     padding: 0 5px 20px 5px;
     width: 100%;
@@ -552,38 +594,32 @@ section ul {
     flex-direction: column;
     align-items: center;
   }
-
   .about-me-box .content {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     max-width: 100%;
   }
-
   .about-me-box .content .about-me-content {
     align-items: center;
   }
-
   .about-me-box .content .text {
     text-align: center;
     margin-top: -50px;
   }
-
   .about-me-box .content .text p {
+    text-align: justify !important;
     font-size: 0.9em;
     margin-left: 0;
     text-indent: 0;
   }
-
   .about-me-box .content p {
     margin-left: 0;
     text-indent: 0;
   }
-
   .about-me-box::after {
     display: none;
   }
-
   #contact .content p {
     margin-top: 130px;
     font-size: 0.9em;
@@ -591,52 +627,45 @@ section ul {
     padding-right: 10px;
     text-align: center;
   }
-
   #contact .social-icons {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 0;
   }
-
   #contact .social-icons a {
     font-size: 1.2em;
     margin: 0 10px;
   }
-
   .projects-grid {
     display: none;
   }
-
   .projects-list {
     display: block;
     padding: 0 10px;
   }
-
   .projects-list ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-
   .projects-list li {
     margin-bottom: 15px;
     text-align: center;
   }
-
   .projects-list a {
     font-size: 0.7em;
     color: #007ab3;
     text-decoration: none;
   }
-
   .projects-list a:hover {
     color: #005f8a;
   }
-
+  .projects-list span {
+    font-size: 0.7em;
+  }
   .scroll-bar {
     display: none;
   }
-
   #contact .about-me-box {
     margin: 20px auto 0 auto;
   }
