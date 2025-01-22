@@ -614,7 +614,7 @@ section ul {
 /* Increase the negative margin to push text higher */
 .about-me-box .content .text {
   text-align: justify;
-  margin-top: -70px; /* Was -30px; bigger negative pushes text further up */
+  margin-top: -90px; /* Was -30px; bigger negative pushes text further up */
 }
 .about-me-box .content .text p {
   text-align: justify !important;
