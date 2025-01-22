@@ -613,14 +613,14 @@ section ul {
   }
   .about-me-box .content .text {
     text-align: justify;
-    margin-top: 0px;
+    margin-top: -10px;
   }
   .about-me-box .content .text p {
     text-align: justify !important;
     font-size: 0.8em;
     margin-left: 0;
     text-indent: 0;
-    margin-bottom: 20px important!;
+    margin-bottom: 0px important!;
   }
   .about-me-box .content p {
     margin-left: 0;
