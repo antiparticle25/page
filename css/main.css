@@ -494,6 +494,14 @@ section ul {
   .navbar-fixed a {
     font-size: 0.8em;
   }
+  .navbar-home {
+    margin-top: -20px !important; /* Adjust the negative value as needed */
+  }
+  
+  /* Optionally reduce vertical spacing between the nav items */
+  .navbar-home li {
+    margin: 10px 0 !important; /* Adjust if you want tighter/looser spacing */
+  }
   #home {
     flex-direction: column;
     align-items: center;
