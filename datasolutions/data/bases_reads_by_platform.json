@@ -1,0 +1,23 @@
+{
+  "platforms": [
+    "Illumina",
+    "Oxford Nanopore",
+    "PacBio",
+    "MGI / BGI",
+    "ThermoFisher"
+  ],
+  "gb": [
+    51.57,
+    0.54,
+    1.1,
+    2.56,
+    0.12
+  ],
+  "reads": [
+    268.65,
+    0.16,
+    0.22,
+    16.95,
+    0.86
+  ]
+}

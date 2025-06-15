@@ -1,0 +1,146 @@
+[
+  {
+    "instrument_model": "Illumina Genome Analyzer II",
+    "platform_vendor": "Illumina",
+    "total_Gb": 166731.347,
+    "total_cost_million": 24.441,
+    "cost_per_gb_2024": 150.0,
+    "short_name": "Genome Analyzer II"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 1000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 105925.859,
+    "total_cost_million": 2.936,
+    "cost_per_gb_2024": 23.0,
+    "short_name": "HiSeq 1000"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 1500",
+    "platform_vendor": "Illumina",
+    "total_Gb": 208656.077,
+    "total_cost_million": 4.61,
+    "cost_per_gb_2024": 18.4,
+    "short_name": "HiSeq 1500"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 2000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 3876339.9,
+    "total_cost_million": 68.174,
+    "cost_per_gb_2024": 13.8,
+    "short_name": "HiSeq 2000"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 2500",
+    "platform_vendor": "Illumina",
+    "total_Gb": 6312229.115,
+    "total_cost_million": 71.841,
+    "cost_per_gb_2024": 9.2,
+    "short_name": "HiSeq 2500"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 3000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 856441.808,
+    "total_cost_million": 8.402,
+    "cost_per_gb_2024": 8.26,
+    "short_name": "HiSeq 3000"
+  },
+  {
+    "instrument_model": "Illumina HiSeq 4000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 5273208.515,
+    "total_cost_million": 50.292,
+    "cost_per_gb_2024": 8.26,
+    "short_name": "HiSeq 4000"
+  },
+  {
+    "instrument_model": "Illumina HiSeq X",
+    "platform_vendor": "Illumina",
+    "total_Gb": 6358307.789,
+    "total_cost_million": 34.954,
+    "cost_per_gb_2024": 4.6,
+    "short_name": "HiSeq X"
+  },
+  {
+    "instrument_model": "Illumina MiSeq",
+    "platform_vendor": "Illumina",
+    "total_Gb": 1027206.388,
+    "total_cost_million": 139.445,
+    "cost_per_gb_2024": 121.99,
+    "short_name": "MiSeq"
+  },
+  {
+    "instrument_model": "Illumina MiniSeq",
+    "platform_vendor": "Illumina",
+    "total_Gb": 21422.209,
+    "total_cost_million": 5.108,
+    "cost_per_gb_2024": 246.81,
+    "short_name": "MiniSeq"
+  },
+  {
+    "instrument_model": "Illumina NextSeq 2000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 399923.076,
+    "total_cost_million": 6.499,
+    "cost_per_gb_2024": 15.71,
+    "short_name": "NextSeq 2000"
+  },
+  {
+    "instrument_model": "Illumina NextSeq 500/550",
+    "platform_vendor": "Illumina",
+    "total_Gb": 3090203.838,
+    "total_cost_million": 160.762,
+    "cost_per_gb_2024": 44.69,
+    "short_name": "NextSeq 500/550"
+  },
+  {
+    "instrument_model": "Illumina NovaSeq 6000",
+    "platform_vendor": "Illumina",
+    "total_Gb": 23161055.774,
+    "total_cost_million": 128.207,
+    "cost_per_gb_2024": 5.09,
+    "short_name": "NovaSeq 6000"
+  },
+  {
+    "instrument_model": "MGI BGISEQ",
+    "platform_vendor": "MGI / BGI",
+    "total_Gb": 967289.914,
+    "total_cost_million": 10.191,
+    "cost_per_gb_2024": 10.28,
+    "short_name": "MGI BGISEQ"
+  },
+  {
+    "instrument_model": "MGI DNBSEQ-T7",
+    "platform_vendor": "MGI / BGI",
+    "total_Gb": 881334.26,
+    "total_cost_million": 3.088,
+    "cost_per_gb_2024": 3.34,
+    "short_name": "MGI DNBSEQ-T7"
+  },
+  {
+    "instrument_model": "Oxford Nanopore MinION",
+    "platform_vendor": "Oxford Nanopore",
+    "total_Gb": 95495.752,
+    "total_cost_million": 2.541,
+    "cost_per_gb_2024": 27.6,
+    "short_name": "MinION"
+  },
+  {
+    "instrument_model": "Oxford Nanopore PromethION",
+    "platform_vendor": "Oxford Nanopore",
+    "total_Gb": 379146.876,
+    "total_cost_million": 3.73,
+    "cost_per_gb_2024": 9.2,
+    "short_name": "PromethION"
+  },
+  {
+    "instrument_model": "PacBio Sequel II",
+    "platform_vendor": "PacBio",
+    "total_Gb": 656216.554,
+    "total_cost_million": 11.663,
+    "cost_per_gb_2024": 16.56,
+    "short_name": "PacBio Sequel II"
+  }
+]

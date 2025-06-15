@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgenomics_docusaurus_new=self.webpackChunkgenomics_docusaurus_new||[]).push([[235],{8552:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
