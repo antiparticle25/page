@@ -1,1 +1,13 @@
-datasolutions/gds_local_copy/
+
+node_modules/
+build/
+.docusaurus/
+static/
+
+# local copies / embedded repos (never commit here)
+gds_local_copy/
+build/gds_local_copy/
+
+# OS / Windows metadata
+*Zone.Identifier
+.DS_Store
